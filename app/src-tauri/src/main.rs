@@ -1,4 +1,10 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
+extern crate dotenv;
+
+use dotenv::dotenv;
+use std::dotenv;
+use google_maps::prelude::*;
+
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 #[tauri::command]
